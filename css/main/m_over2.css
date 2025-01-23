@@ -1,0 +1,201 @@
+#m_over2 {
+    padding: 30vh 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+}
+
+/* 프레스 바 */
+.over_bg {
+    animation: bg linear;
+    animation-timeline: view(block 100% 0%);
+    animation-fill-mode: both;
+    transform-origin: left;
+    animation-timing-function: ease;
+}
+
+@keyframes bg {
+    from {
+        background-image: url('/img/ta_bg.png');
+    }
+    to {
+        background-image: url('/img/ta_bg.jpg');
+    }
+}
+
+#m_over2 > div {
+    position: relative;
+    height: 100vh;
+    display: flex;
+}
+#m_over2 > div > ul.fl {
+    width: 50%;
+    max-height: 50vh;
+    height: 100%;
+    position: sticky;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#m_over2 > div > ul.fl li {
+    color: white;
+    position: relative;
+}
+
+#m_over2 > div > ul.fl li:nth-of-type(1) {
+    font-size: 5.2vw;
+    padding: 1% 2%;
+    font-family: 'KIMM_Bold';
+}
+/* 프레스 바 */
+.red-bar {
+    transition: 2s linear;
+    animation: grow 2s linear 2s;
+    animation-timeline: view(block 15% 0%);
+    animation-fill-mode: both;
+    transform-origin: left;
+    animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+#progress {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(-50%, 0);
+    z-index: 10;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    /* background: linear-gradient(135deg, #4aeadc 0%, #9778d1 20%, #cf2aba 40%, #ee2c82 60%, #fb6962 80%, #fef84c 100%); */
+    color: transparent;
+    mix-blend-mode: difference;
+    border-radius: 30px;
+}
+
+@keyframes grow {
+    from {
+        transform: scaleX(0);
+        -webkit-transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(1);
+        -webkit-transform: scaleX(1);
+    }
+}
+
+@-webkit-keyframes grow {
+    from {
+        transform: scaleX(0);
+        -webkit-transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(1);
+        -webkit-transform: scaleX(1);
+    }
+}
+
+#m_over2 > div > ul.fr {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#m_over2 > div > ul.fr li {
+    color: white;
+    width: 100%;
+}
+#m_over2 > div > ul.fr li:nth-of-type(1) {
+    font-size: 2.5vw;
+    font-family: 'Albert Sans', sans-serif;
+    font-weight: 400;
+    width: 85%;
+    text-align: right;
+}
+#m_over2 > div > ul.fr li:nth-of-type(2) {
+    margin-top: 30px;
+    font-size: 16px;
+    padding-right: 50px;
+    position: relative;
+    text-align: right;
+}
+
+#m_over2 > div > ul.fr li:nth-of-type(2) span {
+}
+
+/* 프레스 바 */
+
+.ball {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translate(0%, -50%);
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: linear-gradient(135deg, #4aeadc 0%, #9778d1 20%, #cf2aba 40%, #ee2c82 60%, #fb6962 80%, #fef84c 100%);
+    border-radius: 50%;
+}
+
+@media all and (max-width: 1025px) {
+    #m_over2 > div > ul.fl li:nth-of-type(1) {
+        font-size: 35px;
+    }
+    #m_over2 > div > ul.fr li:nth-of-type(1) {
+        font-size: 30px;
+        text-align: right;
+        margin-right: 20px;
+    }
+    #m_over2 > div > ul.fr li:nth-of-type(2) {
+        margin-top: 30px;
+        font-size: 14px;
+        padding-right: 38px;
+        position: relative;
+        text-align: right;
+    }
+    .ball {
+        right: 20px;
+    }
+}
+@media all and (max-width: 768px) {
+    #m_over2 {
+        padding: 10vh 0;
+    }
+    #m_over2 > div {
+        flex-direction: column;
+    }
+    #m_over2 > div > ul.fl {
+        width: 100%;
+    }
+    #m_over2 > div > ul.fr li {
+        line-height: 1.3;
+    }
+    #m_over2 > div > ul.fr li:nth-of-type(1) {
+        margin-right: 0;
+        text-align: center;
+    }
+    #m_over2 > div > ul.fr li:nth-of-type(2) {
+        text-align: center;
+        padding-right: 0;
+    }
+    #m_over2 > div > ul.fr {
+        width: 100%;
+    }
+    #m_over2 > div > ul.fr li:nth-of-type(2) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .ball {
+        position: static;
+        width: 13px;
+        height: 13px;
+        margin-right: 5px;
+    }
+}

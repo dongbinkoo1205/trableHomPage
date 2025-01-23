@@ -1,0 +1,202 @@
+/* 메인 css */
+.subDeisgnWrap {
+    width: 100%;
+    overflow-x: hidden;
+    background-color: BLACK;
+}
+.subDeisgnWrap.gam {
+    background-color: #2990d9;
+}
+.subDeisgnWrap.brid {
+    background-color: #140c09;
+}
+.subDeisgnWrap.sam {
+    background-color: #283042;
+}
+
+.subDeisgnWrap .sdB {
+    width: 100%;
+}
+.subDeisgnWrap .sdB .sdI {
+    width: 100%;
+    position: relative;
+}
+.subDeisgnWrap .sdB .sdI img {
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+.subDeisgnWrap .sdB .sdI > span {
+    width: 100%;
+    font-size: 50px;
+    color: white;
+    display: block;
+    font-family: 'KIMM_Bold';
+    position: ABSOLUTE;
+    top: 50%;
+    left: 2%;
+    letter-spacing: 0.5px;
+}
+.subDeisgnWrap .sdB .sdI > span > em {
+    font-size: 15px;
+    color: white;
+    display: block;
+    font-family: 'Pretendard-Regular', 'Noto Sans KR', AppleSDGothicNeo-Regular, 'Malgun Gothic', '맑은 고딕', dotum,
+        '돋움', sans-serif;
+}
+
+.subDeisgnWrap .sdB .sdI > ul {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    flex-direction: column;
+    text-align: justify;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+}
+
+.subDeisgnWrap .sdB .sdI > ul > li {
+    margin: 13px 0;
+}
+.subDeisgnWrap .sdB .sdI ul li span:first-child {
+    font-size: 12px;
+    color: #ffffff;
+    display: block;
+}
+.subDeisgnWrap .sdB .sdI ul li span:last-child {
+    font-size: 17px;
+    color: #ffffff;
+    display: block;
+}
+
+.subDeisgnWrap .sdB .sbF {
+    width: 100%;
+}
+
+.subDeisgnWrap .sdB .sbF ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2%;
+}
+.subDeisgnWrap .sdB .sbF ul li {
+    font-size: 15px;
+    color: #ffffff;
+}
+
+.subDeisgnWrap .sdT {
+    margin: 300px 0 200px 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+}
+.subDeisgnWrap .sdT > div {
+    width: 48%;
+}
+
+.subDeisgnWrap .sdT .sdHead {
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.subDeisgnWrap .sdT .sdDesc {
+}
+.subDeisgnWrap .sdT .sdDesc p {
+    font-size: 18px;
+    color: #ccc;
+}
+.subDeisgnWrap .sdT .sdClick {
+    margin-top: 40px;
+}
+.subDeisgnWrap .sdT .sdClick a {
+    font-size: 20px;
+    color: #ccc;
+    border-bottom: 1px solid #ccc;
+    transition: 0.5s;
+}
+.subDeisgnWrap .sdT .sdClick:hover a {
+    color: white;
+    border-bottom: 1px solid #fff;
+}
+
+.subDeisgnWrap .subVid {
+    margin: 5% 0;
+    padding: 0 8%;
+    width: 100%;
+}
+
+.subDeisgnWrap .subVid img {
+    padding: 0 10%;
+}
+
+.subDeisgnWrap .subVid video {
+    border-radius: 20px;
+}
+.subDeisgnWrap .subVid ul {
+    width: 100%;
+    margin: 50px 0;
+    border-top: 1px solid white;
+}
+.subDeisgnWrap .subVid ul li.TH {
+    font-size: 30px;
+    color: white;
+    margin: 20px 0;
+}
+.subDeisgnWrap .subVid ul li {
+    font-size: 17px;
+    color: #ccc;
+}
+
+/* 공통 css */
+.wh {
+    color: white !important;
+}
+
+@media screen and (max-width: 768px) {
+    .subDeisgnWrap .sdB .sdI > span {
+        transform: translate(0, -35%);
+        top: 35%;
+        padding-left: 10px;
+    }
+    .subDeisgnWrap .sdB .sdI > ul {
+        left: 0;
+        bottom: 20%;
+        padding-left: 20px;
+    }
+    .subDeisgnWrap .sdB .sbF ul {
+        flex-direction: column;
+        margin: 30px 0;
+    }
+    .subDeisgnWrap .sdT {
+        flex-direction: column;
+        margin: 50px 0 50px 0;
+    }
+    .subDeisgnWrap .sdT > div {
+        width: 100%;
+        margin: 10px 0;
+        padding: 0 2%;
+    }
+    .subDeisgnWrap .sdT .sdHead {
+        font-size: 20px;
+    }
+    .subDeisgnWrap .sdT .sdDesc p {
+        font-size: 12px;
+    }
+    .subDeisgnWrap .sdT .sdClick {
+        margin-top: 20px;
+    }
+    .subDeisgnWrap .subVid ul li.TH {
+        font-size: 22px;
+    }
+    .subDeisgnWrap .subVid ul li {
+        font-size: 12px;
+    }
+    .subDeisgnWrap .sdB .sdI img {
+        height: 100vh;
+    }
+}

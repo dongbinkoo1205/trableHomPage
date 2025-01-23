@@ -1,0 +1,80 @@
+#m_over{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30vh 10%;
+    position: relative;
+}
+#m_over .over_left{
+    width: 100%;
+}
+#m_over .over_left ul{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#m_over .over_left ul li{
+    font-size: 80px;
+    color: white;
+    font-family: 'NanumMyeongjo';
+    transition: 1s;
+}
+#m_over .over_left ul li:nth-of-type(2n-1){
+    padding-left: 20%;
+}
+#m_over .over_left ul li:nth-of-type(2n){
+    padding-right: 20%;
+
+}
+#m_over .over_left ul li .btr{
+    padding: 10px 15px;
+    font-size: 12px;
+    color: white;
+    background: transparent;
+    border-radius: 15px;
+    border: 1px solid rgb(75, 75, 75);
+
+}
+
+#m_over .over_right{
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    color: white;
+}
+#m_over .over_right h1{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+#m_over .over_right ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: right;
+}
+#m_over .over_right ul li{
+    font-size: 20px;
+
+}
+
+
+#m_over .over_left ul li:hover{
+    background: linear-gradient(
+		135deg,
+		#4aeadc 0%,
+		#9778d1 20%,
+		#cf2aba 40%,
+		#ee2c82 60%,
+		#fb6962 80%,
+		#fef84c 100%
+	);
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+}

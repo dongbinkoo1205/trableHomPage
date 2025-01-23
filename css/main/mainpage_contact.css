@@ -1,0 +1,476 @@
+/* 메인페이지의 문의하기 폼 */
+/* 메인페이지의 문의하기 폼 */
+/* 메인페이지의 문의하기 폼 */
+/* 메인페이지의 문의하기 폼 */
+/* 메인페이지의 문의하기 폼 */
+
+#form_main{
+    overflow-x: hidden;
+    margin: 50px 0 30px 0 ;
+    padding:  0px 10px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+#form_main .form_sec{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 0 ;
+}
+#form_main .form_sec  label{
+    font-size: 13px;
+}
+
+#form_main .form_sec  input{
+    color: black;
+}
+
+#form_main .f_head{
+    color: black;
+    display: block;
+    font-size: 12px;
+}
+#form_main .f_que{
+    color: black;
+    display: block;
+    font-size: 18px;
+    margin: 5px 0;
+}
+#form_main .f_lis{
+    color: rgba(62, 62, 62, 0.772);
+    display: block;
+    font-size: 12px;
+}
+#form_main .f_com{}
+
+
+#form_main .field {
+    width: 100%;
+}
+#form_main .field .form_left{
+    width: 45%;
+}
+#form_main .field .form_right{
+    width: 45%;
+}
+
+/* 문의하기 폼 2번, 3번은 통합으로 작성 */
+#form_main .form_sec2, #form_main .form_sec3 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 30px 0 ;
+    height: auto;
+}
+#form_main .form_sec2 span, #form_main .form_sec3 span{
+    display: block;
+    padding: 15px 0;
+    width: 100%;
+    height: 50px;
+    max-width: 120px;
+    position: relative;
+    margin: 10px;
+}
+
+#form_main .form_sec2 span input[type="checkbox"], #form_main .form_sec3 span input[type="checkbox"]  {
+    width: 120px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+    border: 1px solid #ffffff;
+    appearance: none;
+    cursor: pointer;
+    background-color: #ffffff69;
+    margin-right: 8px;
+  }
+    
+#form_main .form_sec2 input[type="checkbox"]:checked,#form_main .form_sec3 input[type="checkbox"]:checked {
+background: #ffffff;
+border: 1px solid #ffffff;
+}
+#form_main .form_sec2 span label, #form_main .form_sec3 span label{
+    width: 120px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    color: black;
+}
+#form_main .form_sec2 span label > img, #form_main .form_sec3 span label > img{
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    display: inline;
+    margin-left: 3px;
+}
+
+
+#form_main .form_sec4{
+    display: block;
+    width: 100%;
+    margin: 30px 0 ;
+}
+#form_main .form_sec4 #budget{
+    width: 100%;
+    max-width: 400px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid black;
+    height: 50px;
+    color: black;
+    font-size: 20px;
+}
+#form_main .form_sec4 #budget option{
+    background-color: black;
+    color: black;
+}
+
+#form_main .form_sec4 #budget:focus{
+    outline: none;
+}
+
+#form_main .form_sec4 #budget .p_bud{
+    color: black;
+    background-color: transparent;
+    font-size: 15px;
+}
+#form_main .form_sec5{
+    width: 100%;
+    margin: 30px 0 ;
+    display: block;
+}
+#form_main .form_sec5 > span{
+    font-size: 20px;
+    color: black;
+    margin-right: 10px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    width: auto;
+}
+#form_main .form_sec5 > span > img{
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+    display: inline;
+}
+
+#form_main .form_sec5 > label{
+    font-size: 13px;
+    color: black;
+}
+
+#form_main .form_sec5 > label input{
+    width: 100%;
+    margin: 5px 0;
+    font-size: 20px;
+    border-bottom: 1px solid black;
+    height: 50px;
+    text-align: left;
+
+
+}
+
+#form_main .form_sec6{
+    display: block;
+    width: 100%;
+    margin: 30px 0 ;
+}
+#form_main .form_sec6 > input{
+    height: 50px;
+    width: 400px;
+    color: black;
+}
+
+#form_main .form_sec7{}
+#form_main .form_sec7 > textarea{
+    width: 100%;
+    height: 200px;
+    background-color: #ffffff87;
+    margin: 20px 0;
+    resize: none;
+    padding: 10px 10px;
+    color: black;
+}
+
+#form_main .form_sec7 > textarea::placeholder{
+    font-size: 12px;
+    text-align: left;
+    padding: 0%;
+
+}
+
+
+#form_main .form_sec8 {
+    width: auto;
+    padding: 10px 0 5px 0 ;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    accent-color: red;
+    border-bottom: 1px solid red;
+
+}
+#form_main .form_sec8 > label{
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    color: #000000;
+}
+#form_main .form_sec8 > label > #agree{
+    appearance: none;
+    border-radius: 5px;
+    width: 15px;
+    height: 15px;
+    background-color: #ebebeb;
+    border: 1px solid #d2d2d2;
+    margin-bottom: 0;
+
+}
+
+#form_main .form_sec8 > label > .agreetext{}
+#form_main .form_sec8 > .agreebtn{
+    background-color: transparent;
+    font-size: 15px;
+    color: black;
+    margin-left: 5px;
+    cursor: pointer;
+
+}
+
+
+.field {
+    margin-bottom: 50px;
+  }
+  
+  .field label {
+    display: block;
+    font-size: 12px;
+    color: black;
+    cursor: pointer;
+  }
+  
+  .field input {
+    display: block;
+    line-height: 1.5;
+    font-size: 12px;
+    background-color: transparent;
+    outline:transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    border-radius: 0;
+  }
+  .field input:focus {
+    outline:transparent;
+    background-color: transparent;
+    border-radius: 0;
+
+  }
+
+
+/* 개인정보 전문보기 영역*/
+
+.agree_report{
+    display: none;
+    max-width: 70%;
+    width: 100%;
+    height: 70vh;
+    overflow-y: scroll;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow-x: hidden;
+    border-radius: 50px;
+    -ms-overflow-style: none;
+}
+.agree_report::-webkit-scrollbar{
+    display:none;
+  }
+  
+.agree_report.on{
+    display: block;
+}
+
+.agree_report .agree_wrap{
+    padding: 3%;
+    background-color: black;
+}
+.agree_report .agree_wrap .ag{}
+.agree_report .agree_wrap .ag .ag_inner{}
+.agree_report .agree_wrap .ag .ag_inner .box{
+    transform: none !important;
+}
+.agree_report .agree_wrap .ag .ag_inner .box .agree_cont{}
+.agree_report .agree_wrap .ag .ag_inner .box .agree_cont .close_btn{
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 50%;
+    transform: translateX(-50%);
+    font-size: 27px;
+    font-weight: bold;
+    position: sticky;
+    top: 3%;
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    transition: 0.3s linear;
+    color: rgb(255, 255, 255);
+    background-color: black;
+}
+.agree_report .agree_wrap .ag .ag_inner .box .agree_cont .close_btn:HOVER{
+    background-color: black;
+    color: rgb(0, 0, 0);
+}
+
+.agree_report .agree_wrap .ag .ag_inner .box .agree_btn{}
+.agree_report .agree_wrap .ag .ag_inner .box .agree_div{
+    margin-top: 30px;
+    color: white;
+}
+.agree_report .agree_wrap .ag .ag_inner .box .agree_div h3{}
+.agree_report .agree_wrap .ag .ag_inner .box .agree_div h5{}
+.agree_report .agree_wrap .ag .ag_inner .box .agree_div ul{}
+.agree_report .agree_wrap .ag .ag_inner .box .agree_div ul li{}
+
+.agree_report .agree_wrap .ag .ag_inner .box .agree_div > div{}
+.agree_report .agree_wrap .ag .ag_inner .box .agree_div > div h4{}
+.agree_report .agree_wrap .ag .ag_inner .box .agree_div > div p{}
+
+
+
+  /*--Button Styles--*/
+
+#form_main .field.form_submit{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+} 
+.btnn {
+    font-size: 25px;
+    padding: 10px 30px;
+    background-color: #ffffff87;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: 1s;
+    font-family: 'Pretendard-Regular';
+    font-weight: 100;
+  }
+  .btnn:hover{
+    background-color: #2644CB;
+    color: white;
+  }
+.btnn > img.btn_ket {
+    width: 50px;
+    height: 50px;
+    display: inline;
+    transition: 1s;
+}
+.btnn:hover img.btn_ket{
+    transform: translate(-100px, -100px)
+}
+.btnn > img.btn_love {
+    width: 50px;
+    height: 50px;
+    transition: 1s;
+    transform: translate(0%, -50%);
+    transition: 1s;
+    position: absolute;
+    top: -50%;
+    right:-50%;
+
+}
+.btnn:hover img.btn_love{
+    top: 50%;
+    right: 28px;
+}
+
+@media all and (max-width:1227px) {
+    #form_main .form_sec7 > textarea{
+        height: 200px;
+    }
+    #form_main .form_sec7 > textarea::placeholder{
+        font-size: 11px;
+    }
+}
+@media all and (max-width:1000px) {
+    .ct_wrap{
+        flex-direction: column-reverse;
+    }
+    #form_main{margin: 70px 0 0px 0;}
+    
+    .ct_wrap .ct_live {display: none;}
+    .ct_wrap .ct_live.mobile_live {display: block; width: 100%; height: auto; margin: 30px 0; padding: 0;}
+    .ct_wrap .ct_live.mobile_live ul li .serv_num {width: 18px; height: 18px; font-size: 12px; right: 18%;}
+    .ct_wrap .ct_live.mobile_live ul li .proj_num {width: 18px; height: 18px; font-size: 12px; right: 9%;}
+    .ct_wrap .ct_live.mobile_live ul li span{font-size: 8.2vw;}
+    .ct_wrap .ct_live.mobile_live ul li strong{font-size: 8.2vw;}
+    .ct_wrap .ct_live ul li span{font-size: 4.2vw;}
+    #form_main {width: 100%; border-left: 0;}
+    .field{margin-bottom: 50px;}
+    #form_main .f_head {font-size: 15px;}
+    #form_main .f_head svg{width:20px; height: 20px;}
+    #form_main .f_head svg path{stroke: red;}
+    #form_main .f_que{font-size: 18px;}
+    #form_main .f_lis{font-size: 13px;}
+    #form_main .form_sec{flex-wrap: wrap; margin: 40px 0;}
+    #form_main .form_sec label{font-size: 15px;}
+    #form_main .field .form_left{width: 100%;}
+    #form_main .field .form_right{width: 100%;}
+    .field:last-child{margin-bottom: 10px;}
+    .field input{width: 100%; margin-bottom: 10px; font-size: 15px; }
+    .field label{color: #000000; font-size: 15px;}
+    #form_main .form_sec2 span{margin: 8px 20px 8px 0;}
+    #form_main .form_sec5 > span{ }
+    #form_main .form_sec5 > label input{width: 100%;  height: 30px; }
+    #form_main .form_sec6 > input{width: 100%;}
+    #form_main .form_sec7 > textarea::placeholder{font-size: 10px;}
+    .btnn{padding: 10px 20px; margin: 10px auto;  height: 50%;  font-size: 20px;} 
+
+
+    /* 개인정보 수집동의 버튼 */
+    #form_main .form_sec8 > input{
+        width: auto;
+        margin-bottom: 0;
+    }
+    /* 개인정보 수집동의 텍스트 */
+    .agree_report{
+        height: 80%;
+        width: 90%;
+        max-width: none;
+    }
+    .agree_report .agree_wrap .ag .ag_inner .box .agree_cont .close_btn{
+        width: 25px;
+        height: 25px;
+        font-size: 17px;
+    }
+}
+@media all and (max-width:450px) {
+
+}
+
+

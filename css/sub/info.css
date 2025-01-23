@@ -1,0 +1,631 @@
+#info {
+    width: 100%;
+    background: url('/img/ta_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 10vh 20px;
+    min-height: 100vh;
+}
+
+#info .sujik_cont {
+}
+
+#info .sujik_cont .sujik_wrap {
+    position: relative;
+    height: 500px;
+}
+
+#info .sujik_cont .sujik_wrap h1 {
+    font-size: 7vw;
+    font-weight: bold;
+    color: white;
+}
+
+#info .sujik_cont .sujik_wrap .sujik_img {
+    position: sticky;
+    left: 29%;
+    width: 20vw;
+    max-width: 300px;
+    display: block;
+    animation: sujik;
+    animation-timeline: scroll(nearest block);
+    filter: drop-shadow(0px 0px 8px white);
+}
+
+#info .sujik_cont .sujik_wrap .sujik_img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+#info .sujik_cont .sujik_wrap .sujic_ab {
+    width: auto;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+}
+#info .sujik_cont .sujik_wrap .sujic_ab span {
+    display: block;
+    font-size: 17px;
+    color: white;
+    margin-bottom: 5px;
+    font-weight: 100;
+    font-family: 'Pretendard-Thin';
+}
+#info .sujik_text {
+    width: 100%;
+    position: sticky;
+    top: 100px;
+    line-height: 1.9;
+    font-family: 'Albert Sans', sans-serif;
+    letter-spacing: -10px;
+    margin-top: 100px;
+}
+#info .sujik_text span {
+    color: white;
+    font-size: 3.8vw;
+}
+#info .sujik_text strong {
+    color: white;
+    font-size: 3.8vw;
+    margin-left: 18%;
+    text-align: right;
+    font-weight: 100;
+    font-style: normal;
+    display: block;
+}
+#info .sujik_text em {
+    font-style: normal;
+    font-size: 3.8vw;
+    font-weight: 100;
+    color: white;
+}
+#info .sujik_text p {
+    text-align: right;
+    font-style: normal;
+    font-size: 3.8vw;
+    font-weight: 100;
+    color: white;
+}
+
+@keyframes sujik {
+    0% {
+        transform: translate(0) rotate(0deg);
+        filter: brightness(0.3);
+    }
+
+    15% {
+        transform: translate(150%, 100%) rotate(17deg);
+        filter: brightness(0.5);
+    }
+    23% {
+        transform: translate(-100%, 230%) rotate(0deg);
+        filter: brightness(0.8);
+    }
+    38% {
+        transform: translate(200%, 500%) rotate(17deg);
+        filter: brightness(1.2);
+    }
+}
+
+#info .white_wrap {
+    padding: 30vh 0;
+    margin: 20vh 0;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    color: rgb(212 212 212);
+    mix-blend-mode: hard-light;
+}
+#info .white_wrap .w_head {
+    padding: 0 10%;
+    margin-bottom: 50px;
+    font-size: 36px;
+}
+#info .white_wrap .w_text {
+    line-height: 1.8;
+}
+#info .white_wrap .w_text p {
+    padding: 0 10%;
+    font-size: 50px;
+}
+#info .white_wrap .md_mouse {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: plus-lighter;
+    pointer-events: none;
+}
+#info .white_wrap .md_mouse .mouse_w {
+    min-width: 200%;
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#info .white_wrap .md_mouse .mouse_w .rotate {
+    width: 200px;
+    position: absolute;
+    top: 0;
+    left: 54%;
+    transform: translate(-54%, 0%);
+}
+#info .white_wrap .md_mouse .mouse_w .rotate > .rotatex {
+    color: rgb(255, 13, 0);
+    font-size: 12px;
+}
+#info .white_wrap .md_mouse .mouse_w .rotate > .rotatey {
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+}
+
+#info .white_wrap .md_mouse .mouse_b {
+    min-height: 200%;
+    width: 1px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#info .white_wrap .md_mouse .mouse_b > .circle {
+    position: absolute;
+    width: 32vw;
+    height: 32vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#info .white_wrap .md_mouse .mouse_b > .circle .rotatec1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 55%;
+    height: 55%;
+    background-color: rgb(255 255 255 / 9%);
+    border-radius: 50%;
+}
+
+#info .white_wrap .md_mouse .mouse_b > .circle .rotatec2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    height: 30%;
+    background-color: rgb(255 255 255 / 9%);
+    border-radius: 50%;
+}
+
+#info .our_renew {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+#info .our_renew .renew_text {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 300px 0 50px 0;
+}
+#info .our_renew .renew_text h1 {
+    font-size: 6vw;
+    color: white;
+    line-height: 1.1;
+}
+#info .our_renew .renew_text h2 {
+    font-size: 16px;
+    color: white;
+    display: inline-block;
+    margin: 50px 0 0 20px;
+}
+
+#info .our_renew .renew_benefit {
+    margin: 50px 0;
+    position: relative;
+    width: 100%;
+    height: 1100px;
+    overflow: hidden;
+}
+#info .our_renew .renew_benefit > div {
+}
+#info .our_renew .renew_benefit > div > div {
+    transition: 0.5s;
+}
+#info .our_renew .renew_benefit > div > div:nth-of-type(2n) {
+    margin-top: 350px;
+}
+#info .our_renew .renew_benefit > div > div:nth-of-type(2n-1) {
+    margin-bottom: 30px;
+}
+
+#info .our_renew .renew_benefit > div > div:hover {
+    transform: scale(1.2);
+}
+
+#info .our_renew .renew_benefit > div.benefit1 div {
+    color: white;
+}
+#info .our_renew .renew_benefit > div.benefit2 div {
+    color: white;
+}
+
+#info .our_renew .renew_benefit > div > div:hover img {
+}
+#info .our_renew .renew_benefit > div > div > h1 {
+    font-size: 17px;
+    padding: 20px 0 0 0;
+    border-bottom: 2px solid white;
+    display: inline-block;
+}
+#info .our_renew .renew_benefit > div > div > p {
+    font-size: 13px;
+}
+#info .our_renew .renew_benefit img {
+    width: 130px;
+    object-fit: cover;
+}
+#info .our_renew .renew_benefit .benefit1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: absolute;
+    top: 5%;
+    left: 0;
+    transform: translate(0%, -5%);
+}
+#info .our_renew .renew_benefit .benefit2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: absolute;
+    top: 90%;
+    left: 0;
+    transform: translate(0%, -90%);
+}
+
+#btext_wrap {
+    width: 200%;
+    animation: bgtextmv 30s linear infinite;
+}
+#btext_wrap > .btwrap {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+}
+
+#btext_mv {
+    width: 100%;
+    margin: 0 20px;
+    opacity: 0.7;
+}
+#btext_mv > span {
+    width: 100%;
+    display: block;
+    font-size: 15vw;
+    background: linear-gradient(to bottom, rgba(142, 142, 142, 0.315), rgb(7, 9, 49));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    position: relative;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+@keyframes bgtextmv {
+    0% {
+        transform: translate(0%);
+    }
+    100% {
+        transform: translate(-52%);
+    }
+}
+
+/* CAREER SWIPER */
+
+.career_swi {
+    width: 100%;
+}
+.career_swi .swiper-slide {
+    height: 800px;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 100px 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+}
+.career_swi .swiper-slide .career_head {
+}
+.career_swi .swiper-slide .career_head span {
+    display: block;
+    width: 50px;
+}
+.career_swi .swiper-slide .career_head span img {
+    width: 100%;
+    object-fit: cover;
+}
+.career_swi .swiper-slide .career_head strong {
+    display: block;
+    font-style: normal;
+    color: white;
+    font-size: 45px;
+    margin: 20px 0;
+}
+
+.career_swi .swiper-slide .career_cont {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+}
+.career_swi .swiper-slide .career_cont span {
+    display: block;
+    font-size: 15px;
+    color: white;
+    width: 50%;
+}
+.career_swi .swiper-slide .career_cont strong {
+    display: block;
+    width: 50%;
+    text-align: right;
+}
+.career_swi .swiper-slide .career_cont strong.on {
+}
+
+.career_swi .swiper-slide .career_cont strong svg {
+    width: 50px;
+    height: 50px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.career_swi .swiper-slide .career_cont.on strong svg {
+    transform: rotate(45deg);
+    z-index: 10;
+    filter: invert(1);
+}
+
+.career_swi .swiper-slide .hidden_career {
+    width: 100%;
+    height: 800px;
+    padding: 100px 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    opacity: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+.career_swi .swiper-slide .hidden_career.on {
+    opacity: 1;
+    z-index: 2;
+}
+
+.career_swi .swiper-slide .hidden_career h1 {
+    color: #989898;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.career_swi .swiper-slide .hidden_career ul {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.career_swi .swiper-slide .hidden_career ul li {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+/* INFO 반응형 시작 */
+
+@media all and (max-width: 1025px) {
+    /* 움직이는 큐브  */
+    @keyframes sujik {
+        0% {
+            transform: translateY(0) rotate(0deg);
+        }
+
+        15% {
+            transform: translateY(120%) rotate(17deg);
+        }
+    }
+
+    #info .white_wrap {
+        display: none;
+    }
+
+    #info .our_renew .renew_text h1 {
+        font-size: 10vw;
+    }
+    #info .our_renew .renew_text h2 {
+        font-size: 18px;
+    }
+    #info .our_renew .renew_benefit img {
+        width: 100%;
+    }
+    #info .our_renew .renew_benefit > div > div > h1 {
+        font-size: 15px;
+    }
+    #info .our_renew .renew_benefit > div > div > p {
+        font-size: 11px;
+    }
+    #info .our_renew .renew_benefit .benefit1 {
+        flex-wrap: nowrap;
+    }
+    #info .our_renew .renew_benefit > div > div:nth-of-type(2n-1) {
+        margin-bottom: 200px;
+    }
+    #info .our_renew .renew_benefit .benefit2 {
+        flex-wrap: nowrap;
+        top: 98%;
+        transform: translate(0%, -98%);
+    }
+
+    #career > .swiper-wrapper {
+        height: auto;
+    }
+    .career_swi .swiper-slide {
+        height: 700px;
+    }
+    .career_swi .swiper-slide .hidden_career {
+        height: 700px;
+        padding: 20px;
+    }
+}
+
+@media all and (max-width: 768px) {
+    #info .sujik_cont .sujik_wrap h1 {
+        font-size: 50px;
+    }
+    #info .sujik_cont .sujik_wrap {
+    }
+    #info .sujik_cont .sujik_wrap .sujic_ab {
+        width: 100%;
+        position: absolute;
+        top: 23%;
+        left: 0;
+    }
+    #info .sujik_cont .sujik_wrap .sujic_ab span {
+        display: block;
+        font-size: 13px;
+        color: white;
+        margin-bottom: 5px;
+        font-weight: 100;
+        font-family: 'Pretendard-Thin';
+        text-align: right;
+    }
+    #info .sujik_cont .sujik_wrap .sujik_img {
+        width: 50vw;
+        position: absolute;
+        top: 55%;
+        left: 43%;
+        transform: rotate(15deg);
+    }
+    #info .sujik_text {
+        line-height: 2.5;
+        margin-top: 26px;
+        font-family: 'Albert Sans', sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 100;
+        font-style: normal;
+        letter-spacing: -3.7px;
+    }
+    #info .sujik_text span {
+        font-size: 36px;
+    }
+    #info .sujik_text strong {
+        color: white;
+        display: block;
+        font-size: 36px;
+        font-weight: 100;
+        margin-left: 10%;
+    }
+    #info .sujik_text em {
+        font-size: 36px;
+        text-align: right;
+    }
+    #info .sujik_text p {
+        font-size: 36px;
+        text-align: right;
+    }
+    #info .sujik_cont .sujik_wrap .sujik_img {
+        animation: none;
+    }
+    #info .our_renew .renew_text {
+        margin: 150px 0 50px 0;
+    }
+    #info .our_renew .renew_text h1 {
+        font-size: 15vw;
+    }
+    #info .our_renew .renew_text h2 {
+        margin: 36px 0 0 0;
+        font-size: 15px;
+        text-align: justify;
+    }
+    #info .our_renew .renew_text h2 br {
+        display: none;
+    }
+    #info .our_renew .renew_benefit {
+        height: auto;
+        position: static;
+        transform: none;
+        margin: 70px 0;
+    }
+    #info .our_renew .renew_benefit .benefit1 {
+        flex-wrap: wrap;
+        position: static;
+        transform: none;
+    }
+    #info .our_renew .renew_benefit .benefit2 {
+        flex-wrap: wrap;
+        position: static;
+        transform: none;
+        margin-top: 36px;
+    }
+    #info .our_renew .renew_benefit > div > div:nth-of-type(2n-1) {
+        margin-bottom: 0;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    #info .our_renew .renew_benefit > div > div:nth-of-type(2n) {
+        margin-top: 0;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    #info .our_renew .renew_benefit img {
+        width: 70%;
+    }
+    #info .our_renew .renew_benefit > div > div > p {
+        display: none;
+    }
+    #info .our_renew .renew_benefit > div > div > h1 {
+        border-bottom: 0;
+    }
+    #btext_mv > span {
+        font-size: 33vw;
+        text-overflow: initial;
+        background: linear-gradient(to bottom, rgb(142 142 142), rgb(7, 9, 49));
+        -webkit-background-clip: text;
+    }
+
+    .career_swi .swiper-slide {
+        height: auto;
+        height: 500px;
+    }
+    .career_swi .swiper-slide .hidden_career {
+        height: auto;
+        overflow: scroll;
+        height: 500px;
+    }
+}

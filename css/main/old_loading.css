@@ -1,0 +1,638 @@
+/* intro_text */
+#intro_text {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    transition: 1s;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+#intro_text.on {
+    background-color: black;
+}
+
+#intro_text.opacity {
+    opacity: 0;
+}
+
+#intro_text.small ul {
+    display: none;
+}
+
+#intro_text ul {
+    width: auto;
+}
+#intro_text ul li {
+}
+#intro_text ul li span {
+    font-size: calc(40px + 1vw);
+    color: black;
+    font-family: 'GongGothicMedium';
+}
+#intro_text ul li span.ch {
+    color: rgb(255, 255, 255);
+    transition: 1s;
+}
+
+#intro_text ul li span.hd {
+    font-size: 0vw;
+}
+#intro_text ul li span.hd.on {
+    font-size: calc(40px + 1vw);
+    transition: 1s;
+}
+
+#intro_text .text_ball {
+    width: auto;
+    margin-left: 10px;
+    animation: t_b 0.6s cubic-bezier(0, 0, 0.18, 0.99) infinite alternate;
+    line-height: 100%;
+}
+@keyframes t_b {
+    to {
+        transform: translateY(-50px);
+    }
+}
+
+#intro_text .text_ball .t_ball {
+    width: 18px;
+    height: 18px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+}
+#intro_text .text_ball .t_ball.on {
+    background-color: #4c8d35;
+    transition: 1.5s;
+}
+
+/* 인트로 끝나고 나오는 스마일 표정 */
+
+#intro_next {
+    /* position: fixed; */
+    /* bottom: 0px;
+    right: 0px; */
+    z-index: 10;
+    width: auto;
+}
+#intro_next:hover {
+}
+
+#intro_next.on {
+}
+
+#intro_next > .ball_bg {
+    width: 130px;
+    height: 130px;
+    background-color: transparent;
+    z-index: 10;
+    cursor: pointer;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+
+    /* background-image: url("/img/ball_cg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    animation: in_b 0.6s cubic-bezier(0, 0, 0.18, 0.99) infinite alternate ;
+    z-index: 10;
+    cursor: pointer; */
+}
+
+#intro_next > .ball_bg .talk_balloon {
+    position: absolute;
+    top: -12%;
+    left: -37%;
+    background: #f3f6be;
+    border-radius: 15px 15px 0 15px;
+    width: 85px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 5px white;
+}
+#intro_next > .ball_bg .talk_balloon span {
+    background-color: rgb(69, 69, 69);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    margin-right: 4px;
+}
+#intro_next > .ball_bg .talk_balloon span:nth-of-type(1) {
+    color: black;
+    animation: balloondot 1s infinite ease-in-out;
+}
+#intro_next > .ball_bg .talk_balloon span:nth-of-type(2) {
+    color: black;
+    animation: balloondot 1.2s infinite ease-in-out;
+}
+#intro_next > .ball_bg .talk_balloon span:nth-of-type(3) {
+    color: black;
+    animation: balloondot 1.4s infinite ease-in-out;
+}
+@keyframes balloondot {
+    0% {
+        transform: translateY(-5px);
+    }
+    50% {
+        transform: translateY(3px);
+    }
+
+    100% {
+        transform: translateY(-5px);
+    }
+}
+
+#intro_next > .ball_bg video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes in_b {
+    to {
+        transform: translateY(-10px);
+    }
+}
+
+#intro_next:hover .ball_bg {
+    /* background-image: url("/img/ball_cg2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    animation-play-state: paused; */
+}
+#intro_next > .ball_bg img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+}
+
+#intro_next > .talk_box {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    width: 400px;
+    max-height: 560px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: auto;
+    border: 1px solid rgb(255, 255, 255);
+    opacity: 0;
+    z-index: -10;
+    display: none;
+    transition: 0.5s;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+}
+#intro_next > .talk_box.on {
+    opacity: 1;
+    z-index: 100;
+    display: block;
+}
+
+#intro_next > .talk_box.scrollStop {
+    overflow: hidden;
+}
+
+#intro_next > .talk_box.on.scrollStop {
+    overflow: hidden;
+}
+
+/* 토크 박스 헤더 */
+#intro_next .talk_box .us2_head {
+    border-bottom: 1px solid #ccc;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    padding: 10px 15px;
+    background-color: rgba(0, 0, 0, 0.47);
+    backdrop-filter: blur(5px);
+}
+#intro_next .talk_box .us2_head ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#intro_next .talk_box .us2_head ul li {
+    color: rgb(255, 255, 255);
+    min-width: 50px;
+}
+#intro_next .talk_box .us2_head ul li.close_wrap {
+    height: auto;
+}
+#intro_next .talk_box .us2_head ul li.close_wrap .us_close {
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 50%;
+    position: relative;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+#intro_next .talk_box .us2_head ul li.close_wrap .us_close:hover {
+    background-color: blue;
+    transform: rotate(360deg);
+}
+
+#intro_next .talk_box .us2_head ul li.close_wrap .us_close::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 49%;
+    width: 1px;
+    height: 10px;
+    background-color: rgb(234, 234, 234);
+    transform: translate(-50%, -49%) rotate(45deg);
+}
+#intro_next .talk_box .us2_head ul li.close_wrap .us_close::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 49%;
+    width: 1px;
+    height: 10px;
+    background-color: rgb(234, 234, 234);
+    transform: translate(-50%, -49%) rotate(-45deg);
+}
+
+#intro_next .talk_box .us2_head ul li > span.us_hand {
+}
+#intro_next .talk_box .us2_head ul li.us_clock {
+}
+
+#intro_next::-webkit-scrollbar {
+    display: none;
+}
+#intro_next > .talk_box .talk_wrap {
+    padding: 15px 20px;
+    background-color: #000;
+}
+#intro_next > .talk_box .talk_wrap h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: white;
+    position: relative;
+}
+#intro_next > .talk_box .talk_wrap h1 img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    display: inline;
+}
+#intro_next > .talk_box .talk_wrap h1 > span.typing_cg {
+    display: inline;
+    font-size: 25px;
+}
+#intro_next > .talk_box .talk_wrap h2 {
+    font-size: 11px;
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+#intro_next > .talk_box .talk_wrap > div {
+    margin: 10px 0;
+    display: block;
+}
+#intro_next > .talk_box .talk_wrap div span {
+}
+#intro_next > .talk_box .talk_wrap .talk_bg1 {
+    background: url('/img/talk_img1.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 100%;
+    min-height: 350px;
+    cursor: pointer;
+}
+#intro_next > .talk_box .talk_wrap .talk_bg2 {
+    background: url('/img/talk_img3.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 100%;
+    min-height: 350px;
+    cursor: pointer;
+}
+#intro_next > .talk_box .talk_wrap .talk_bg1 .talk_oj .ojt_img {
+    background: url('/img/talk_img2.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60%;
+    position: relative;
+}
+#intro_next > .talk_box .talk_wrap .talk_bg2 .talk_oj .ojt_img {
+    background: url('/img/talk_img4.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60%;
+    position: relative;
+}
+
+#intro_next > .talk_box .talk_wrap .talk_sections .talk_btn {
+    width: 100%;
+    height: 350px;
+    padding: 20px 10px;
+    margin-top: 20px;
+    border: 0.1px solid white;
+}
+#intro_next > .talk_box .talk_wrap .talk_sections .talk_btn > span {
+    color: white;
+    font-size: 15px;
+    display: block;
+}
+#intro_next > .talk_box .talk_wrap .talk_sections .talk_btn strong {
+    color: white;
+    font-size: 25px;
+    font-weight: normal;
+    display: block;
+}
+#intro_next > .talk_box .talk_wrap .talk_sections .talk_btn ul {
+    display: flex;
+    align-items: center;
+    margin-top: 140px;
+}
+#intro_next > .talk_box .talk_wrap .talk_sections .talk_btn ul li:first-child {
+    background-color: rgb(244 216 255 / 30%);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: relative;
+    color: white;
+    margin-right: 15px;
+}
+#intro_next > .talk_box .talk_wrap .talk_sections .talk_btn ul li:first-child::before {
+    content: '';
+    bottom: 2px;
+    right: 5px;
+    width: 15px;
+    height: 15px;
+    background-color: #35ff00b0;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+}
+
+#intro_next > .talk_box .talk_wrap .talk_sections .talk_btn ul li:first-child img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#intro_next > .talk_box .talk_wrap .talk_sections .talk_btn ul li span {
+    font-size: 15px;
+    color: white;
+    display: block;
+}
+#intro_next > .talk_box .talk_wrap .toptop {
+    width: 100%;
+    padding: 15px 0;
+}
+#intro_next > .talk_box .talk_wrap .toptop a {
+    display: block;
+    color: white;
+    font-size: 15px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* 버튼 누르면 나오는 cont */
+
+#intro_next > .talk_box .talk_wrap .talk_oj {
+    position: absolute;
+    top: 40.5px;
+    left: 150%;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    -ms-overflow-style: none;
+    transition: 0.5s;
+    opacity: 0;
+    -webkit-overflow-scrolling: touch;
+    -webkit-transform: translateZ(0);
+    overflow-y: scroll;
+}
+#intro_next > .talk_box .talk_wrap .talk_oj.on {
+    left: 0%;
+    opacity: 1;
+}
+
+#intro_next > .talk_box .talk_wrap .talk_oj::-webkit-scrollbar {
+    display: none;
+}
+#intro_next > .talk_box .talk_wrap .talk_oj .ojt_img {
+    background: url('/img/talk_img4.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60%;
+    position: relative;
+}
+#intro_next > .talk_box .talk_wrap .talk_oj .ojt_img .ts_close {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+#intro_next > .talk_box .talk_wrap .talk_oj .ojt_img .ts_close svg {
+    width: 100%;
+    height: 100%;
+}
+#intro_next > .talk_box .talk_wrap .talk_oj .ojt_img .oj_head {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+}
+#intro_next > .talk_box .talk_wrap .talk_oj .ojt_img .oj_head h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: white;
+    position: relative;
+}
+#intro_next > .talk_box .talk_wrap .talk_oj .ojt_img .oj_head h1 img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    display: inline;
+}
+
+#intro_next > .talk_box .talk_wrap .talk_oj .ojt_img .oj_head h2 {
+    font-size: 13px;
+    color: white;
+    margin-bottom: 0px;
+}
+#intro_next > .talk_box .talk_wrap .talk_oj .ojt_img .oj_head p {
+    font-size: 13px;
+    color: white;
+}
+
+#intro_next > .talk_box .talk_wrap .talk_oj .oj_cont {
+    background-color: rgb(222 222 222);
+    width: 100%;
+    padding: 30px 15px;
+}
+#intro_next > .talk_box .talk_wrap .talk_oj .oj_cont .oj_text {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-size: 11px;
+}
+#intro_next > .talk_box .talk_wrap .talk_oj .oj_cont .oj_3d {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    padding: 20px 10px;
+    border: 1px solid white;
+    border-radius: 15px;
+}
+#intro_next > .talk_box .talk_wrap .talk_oj .oj_cont .oj_3d .d3_img {
+    position: relative;
+    width: 19%;
+}
+#intro_next > .talk_box .talk_wrap .talk_oj .oj_cont .oj_3d .d3_img::before {
+    content: '';
+    bottom: 19px;
+    right: 15px;
+    width: 14px;
+    height: 14px;
+    background-color: #35ff00b0;
+    border-radius: 50%;
+    position: absolute;
+}
+#intro_next > .talk_box .talk_wrap .talk_oj .oj_cont .oj_3d .d3_img img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    background-color: rgb(223 43 43 / 44%);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+#intro_next > .talk_box .talk_wrap .talk_oj .oj_cont .oj_3d .d3_counseler {
+    width: 81%;
+}
+#intro_next > .talk_box .talk_wrap .talk_oj .oj_cont .oj_3d .d3_counseler {
+    color: rgb(0, 0, 0);
+}
+#intro_next > .talk_box .talk_wrap .talk_oj .oj_cont .oj_3d .d3_counseler > h3 {
+    font-size: 16px;
+}
+#intro_next > .talk_box .talk_wrap .talk_oj .oj_cont .oj_3d .d3_counseler > h4 {
+    font-size: 12px;
+}
+
+#intro_next > .talk_box .talk_wrap .talk_oj .oj_cont .oj_3d > .d3_message {
+    margin-top: 12px;
+}
+#intro_next > .talk_box .talk_wrap .talk_oj .oj_cont .oj_3d > .d3_message > .coun_message {
+    width: 100%;
+    border-radius: 2px 15px 15px 15px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgb(255 255 255 / 47%);
+    padding: 13px 20px;
+    margin: 8px 0;
+    font-size: 14px;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 1.5s;
+}
+
+#intro_next > .talk_box .talk_wrap .talk_oj .oj_cont .oj_3d > .d3_message > .coun_message.on {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+#intro_next > .talk_box .talk_wrap div a img {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    display: inline-block;
+    margin-left: 4px;
+}
+
+#intro_next > .talk_box .talk_wrap .talk_oj .oj_cont .oj_3d > .d3_select {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+#intro_next > .talk_box .talk_wrap .talk_oj .oj_cont .oj_3d > .d3_select h1 {
+    color: #ff4f4f;
+    font-size: 13px;
+    text-align: left;
+    width: calc(100% - 2%);
+    margin-left: 2%;
+}
+
+#intro_next > .talk_box .talk_wrap .talk_oj .oj_cont .oj_3d > .d3_select > div {
+    margin: 5px 0;
+    max-width: 45%;
+    width: 100%;
+}
+#intro_next > .talk_box .talk_wrap .talk_oj .oj_cont .oj_3d > .d3_select > div a {
+    padding: 5px 3px;
+    font-size: 14px;
+    background-color: rgb(255, 255, 255);
+    backdrop-filter: blur(2px);
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.44);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    transition: 0.5s;
+}
+#intro_next > .talk_box .talk_wrap .talk_oj .oj_cont .oj_3d > .d3_select > div:hover a {
+    background-color: rgba(255, 255, 255, 0.322);
+}
+
+#intro_next > .talk_box .talk_wrap .talk_oj .oj_cont .oj_3d > .d3_select > div a img {
+    display: inline;
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+}
+
+/* 모바일 */
+@media all and (max-width: 768px) {
+    #intro_next .talk_box .us2_head {
+        background-color: black;
+        backdrop-filter: none;
+    }
+    #intro_next > .talk_box {
+        width: 90vw;
+        height: 70vh;
+        bottom: 50px;
+        max-height: none;
+        right: 5vw;
+    }
+    #intro_next > .talk_box .talk_wrap .talk_oj.on {
+        position: fixed;
+    }
+    #intro_next > .talk_box .talk_wrap .talk_oj .oj_cont .oj_3d > .d3_select > div a {
+        font-size: 13px;
+    }
+}

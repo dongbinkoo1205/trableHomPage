@@ -1,0 +1,629 @@
+/* 문의하기 폼 */
+.ct_wrap {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('/img/ta_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    position: relative;
+}
+
+.ct_wrap .ct_live {
+    padding: 5%;
+    width: 50%;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.ct_wrap .ct_live.mobile_live {
+    display: none;
+}
+.ct_wrap .ct_live ul {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.ct_wrap .ct_live ul li {
+    padding-bottom: 15px;
+}
+.ct_wrap .ct_live ul li span {
+    font-size: 3.2vw;
+    color: white;
+}
+.ct_wrap .ct_live ul li.serv_list {
+    position: relative;
+}
+
+.ct_wrap .ct_live ul li.proj_list {
+    position: relative;
+}
+
+.ct_wrap .ct_live ul li .serv_num {
+    position: absolute;
+    top: 0;
+    right: 19%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #2644cb;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ct_wrap .ct_live ul li .proj_num {
+    position: absolute;
+    top: 0;
+    right: 11%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #2644cb;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ct_wrap .ct_live ul li strong {
+    font-weight: normal;
+    font-size: 3.2vw;
+    color: rgba(255, 255, 255, 0.322);
+}
+
+#ct_form {
+    overflow-x: hidden;
+    margin: 100px 0;
+    padding: 7%;
+    width: 50%;
+    border-left: 1px solid #ccc;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+#ct_form .form_sec {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+#ct_form .form_sec label {
+    font-size: 13px;
+}
+
+#ct_form .form_sec input {
+    color: white;
+    margin-bottom: 25px;
+}
+
+#ct_form .f_head {
+    color: rgba(255, 255, 255, 0.772);
+    display: block;
+    font-size: 12px;
+}
+#ct_form .f_que {
+    color: rgb(255, 255, 255);
+    display: block;
+    font-size: 18px;
+    margin: 5px 0;
+}
+#ct_form .f_lis {
+    color: rgba(255, 255, 255, 0.772);
+    display: block;
+    font-size: 12px;
+}
+#ct_form .f_com {
+}
+
+#ct_form .field {
+    width: 100%;
+}
+#ct_form .field .form_left {
+    width: 45%;
+}
+#ct_form .field .form_right {
+    width: 45%;
+}
+
+/* 문의하기 폼 2번, 3번은 통합으로 작성 */
+#ct_form .form_sec2,
+#ct_form .form_sec3 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 30px 0;
+    height: auto;
+}
+#ct_form .form_sec2 span,
+#ct_form .form_sec3 span {
+    display: block;
+    padding: 15px 0;
+    width: 100%;
+    height: 50px;
+    max-width: 120px;
+    position: relative;
+    margin: 10px;
+}
+
+#ct_form .form_sec2 span input[type='checkbox'],
+#ct_form .form_sec3 span input[type='checkbox'] {
+    width: 120px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+    border: 1px solid #ffffff;
+    appearance: none;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+#ct_form .form_sec2 input[type='checkbox']:checked,
+#ct_form .form_sec3 input[type='checkbox']:checked {
+    background: #2644cb;
+    border: 1px solid #ffffff;
+}
+#ct_form .form_sec2 span label,
+#ct_form .form_sec3 span label {
+    width: 120px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    color: white;
+}
+#ct_form .form_sec2 span label > img,
+#ct_form .form_sec3 span label > img {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    display: inline;
+    margin-left: 3px;
+}
+
+#ct_form .form_sec4 {
+    display: block;
+    width: 100%;
+    margin: 30px 0;
+}
+#ct_form .form_sec4 #budget {
+    width: 100%;
+    max-width: 400px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    height: 50px;
+    color: white;
+    font-size: 20px;
+}
+
+#ct_form .form_sec4 #budget:focus {
+    outline: none;
+}
+
+#ct_form .form_sec4 #budget .p_bud {
+    color: black;
+    background-color: transparent;
+    font-size: 15px;
+}
+#ct_form .form_sec5 {
+    width: 100%;
+    margin: 30px 0;
+    display: block;
+}
+#ct_form .form_sec5 > span {
+    font-size: 20px;
+    color: white;
+    margin-right: 10px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    width: auto;
+}
+#ct_form .form_sec5 > span > img {
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+    display: inline;
+}
+
+#ct_form .form_sec5 > label {
+    font-size: 13px;
+    color: white;
+}
+
+#ct_form .form_sec5 > label input {
+    filter: invert(1);
+    width: 100%;
+    margin: 5px 0;
+    font-size: 20px;
+    border-bottom: 1px solid black;
+    height: 50px;
+    text-align: left;
+}
+
+#ct_form .form_sec6 {
+    display: block;
+    width: 100%;
+    margin: 30px 0;
+}
+#ct_form .form_sec6 > input {
+    height: 50px;
+    width: 400px;
+    color: white;
+}
+
+#ct_form .form_sec7 {
+}
+#ct_form .form_sec7 > textarea {
+    width: 100%;
+    height: 200px;
+    background-color: #ffffff00;
+    margin: 20px 0;
+    resize: none;
+    padding: 10px 10px;
+    color: white;
+}
+
+#ct_form .form_sec7 > textarea::placeholder {
+    font-size: 12px;
+    text-align: left;
+    padding: 0%;
+}
+
+#ct_form .form_sec8 {
+    width: auto;
+    padding: 10px 0 5px 0;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    accent-color: red;
+    border-bottom: 1px solid red;
+}
+#ct_form .form_sec8 > label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    color: #ccc;
+}
+#ct_form .form_sec8 > label > #agree {
+    appearance: none;
+    border-radius: 5px;
+    width: 15px;
+    height: 15px;
+    background-color: #ebebeb;
+    border: 1px solid #d2d2d2;
+    margin-bottom: 0;
+}
+
+#ct_form .form_sec8 > label > .agreetext {
+}
+#ct_form .form_sec8 > .agreebtn {
+    background-color: transparent;
+    font-size: 15px;
+    color: white;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.field {
+    margin-bottom: 50px;
+}
+
+.field label {
+    display: block;
+    font-size: 12px;
+    color: #777;
+    cursor: pointer;
+}
+
+.field input {
+    display: block;
+    line-height: 1.5;
+    font-size: 14px;
+    background-color: transparent;
+    outline: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    border-radius: 0;
+}
+.field input:focus {
+    outline: transparent;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+/* 개인정보 전문보기 영역*/
+
+.agree_report {
+    display: none;
+    max-width: 70%;
+    width: 100%;
+    height: 70vh;
+    overflow-y: scroll;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow-x: hidden;
+    border-radius: 50px;
+    -ms-overflow-style: none;
+}
+.agree_report::-webkit-scrollbar {
+    display: none;
+}
+
+.agree_report.on {
+    display: block;
+}
+
+.agree_report .agree_wrap {
+    padding: 3%;
+    background-color: white;
+}
+.agree_report .agree_wrap .ag {
+}
+.agree_report .agree_wrap .ag .ag_inner {
+}
+.agree_report .agree_wrap .ag .ag_inner .box {
+}
+.agree_report .agree_wrap .ag .ag_inner .box .agree_cont {
+}
+.agree_report .agree_wrap .ag .ag_inner .box .agree_cont .close_btn {
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 50%;
+    transform: translateX(-50%);
+    font-size: 27px;
+    font-weight: bold;
+    position: sticky;
+    top: 3%;
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 50%;
+    transition: 0.3s linear;
+    background-color: black;
+    color: white;
+}
+.agree_report .agree_wrap .ag .ag_inner .box .agree_cont .close_btn:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.agree_report .agree_wrap .ag .ag_inner .box .agree_btn {
+}
+.agree_report .agree_wrap .ag .ag_inner .box .agree_div {
+    margin-top: 30px;
+}
+.agree_report .agree_wrap .ag .ag_inner .box .agree_div h3 {
+}
+.agree_report .agree_wrap .ag .ag_inner .box .agree_div h5 {
+}
+.agree_report .agree_wrap .ag .ag_inner .box .agree_div ul {
+}
+.agree_report .agree_wrap .ag .ag_inner .box .agree_div ul li {
+}
+
+.agree_report .agree_wrap .ag .ag_inner .box .agree_div > div {
+}
+.agree_report .agree_wrap .ag .ag_inner .box .agree_div > div h4 {
+}
+.agree_report .agree_wrap .ag .ag_inner .box .agree_div > div p {
+}
+
+/*--Button Styles--*/
+
+#ct_form .field.form_submit {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.btn {
+    font-size: 25px;
+    padding: 10px 30px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: 1s;
+    font-family: 'Pretendard-Regular';
+    font-weight: 100;
+}
+.btn:hover {
+    background-color: #2644cb;
+}
+.btn > img.btn_ket {
+    width: 50px;
+    height: 50px;
+    display: inline;
+    transition: 1s;
+}
+.btn:hover img.btn_ket {
+    transform: translate(-100px, -100px);
+}
+.btn > img.btn_love {
+    width: 50px;
+    height: 50px;
+    transition: 1s;
+    transform: translate(0%, -50%);
+    transition: 1s;
+    position: absolute;
+    top: -50%;
+    right: -50%;
+}
+.btn:hover img.btn_love {
+    top: 50%;
+    right: 28px;
+}
+
+@media all and (max-width: 1227px) {
+    #ct_form .form_sec7 > textarea {
+        height: 200px;
+    }
+    #ct_form .form_sec7 > textarea::placeholder {
+        font-size: 11px;
+    }
+}
+@media all and (max-width: 1000px) {
+    .ct_wrap {
+        flex-direction: column-reverse;
+    }
+    #ct_form {
+        margin: 70px 0 0px 0;
+    }
+
+    .ct_wrap .ct_live {
+        display: none;
+    }
+    .ct_wrap .ct_live.mobile_live {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 30px 0;
+        padding: 0;
+    }
+    .ct_wrap .ct_live.mobile_live ul li .serv_num {
+        width: 18px;
+        height: 18px;
+        font-size: 12px;
+        right: 18%;
+    }
+    .ct_wrap .ct_live.mobile_live ul li .proj_num {
+        width: 18px;
+        height: 18px;
+        font-size: 12px;
+        right: 9%;
+    }
+    .ct_wrap .ct_live.mobile_live ul li span {
+        font-size: 8.2vw;
+    }
+    .ct_wrap .ct_live.mobile_live ul li strong {
+        font-size: 8.2vw;
+    }
+    .ct_wrap .ct_live ul li span {
+        font-size: 4.2vw;
+    }
+    #ct_form {
+        width: 100%;
+        border-left: 0;
+    }
+    .field {
+        margin-bottom: 50px;
+    }
+    #ct_form .f_head {
+        font-size: 15px;
+    }
+    #ct_form .f_head svg {
+        width: 20px;
+        height: 20px;
+    }
+    #ct_form .f_head svg path {
+        stroke: red;
+    }
+    #ct_form .f_que {
+        font-size: 18px;
+    }
+    #ct_form .f_lis {
+        font-size: 13px;
+    }
+    #ct_form .form_sec {
+        flex-wrap: wrap;
+        margin: 40px 0;
+    }
+    #ct_form .form_sec label {
+        font-size: 15px;
+    }
+    #ct_form .field .form_left {
+        width: 100%;
+    }
+    #ct_form .field .form_right {
+        width: 100%;
+    }
+    .field:last-child {
+        margin-bottom: 10px;
+    }
+    .field input {
+        width: 100%;
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+    .field label {
+        color: #a9a9a9;
+        font-size: 15px;
+    }
+    #ct_form .form_sec2 span {
+        margin: 8px 20px 8px 0;
+    }
+    #ct_form .form_sec5 > span {
+    }
+    #ct_form .form_sec5 > label input {
+        width: 100%;
+        height: 30px;
+    }
+    #ct_form .form_sec6 > input {
+        width: 100%;
+    }
+    #ct_form .form_sec7 > textarea::placeholder {
+        font-size: 10px;
+    }
+    .btn {
+        padding: 10px 20px;
+        margin: 10px auto;
+        width: 100%;
+        height: 50%;
+        font-size: 7vw;
+    }
+
+    /* 개인정보 수집동의 버튼 */
+    #ct_form .form_sec8 > input {
+        width: auto;
+        margin-bottom: 0;
+    }
+    /* 개인정보 수집동의 텍스트 */
+    .agree_report {
+        height: 80%;
+        width: 90%;
+        max-width: none;
+    }
+    .agree_report .agree_wrap .ag .ag_inner .box .agree_cont .close_btn {
+        width: 25px;
+        height: 25px;
+        font-size: 17px;
+    }
+}
+@media all and (max-width: 450px) {
+}

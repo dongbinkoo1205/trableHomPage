@@ -1,0 +1,26 @@
+#tabSwipeProduct { width:100%;margin-top:30px;}
+#tabSwipeProduct .title { text-align:center; letter-spacing:3px; font-size:18px; margin:0px 0 20px; font-weight:bold; }
+
+#tabSwipeProduct .swiper-tab-container { overflow:hidden; }
+.swiper-pagination { width:100%;margin:0 auto; }
+.swiper-pagination > span {margin:5px 5px;}
+
+.new_swiper1 { width:100%;  text-align:center; line-height:16px; color:#333; }
+.new_swiper1 .menu { width:100%; margin:0 0 3px 0; letter-spacing:1px; }
+.new_swiper1 .menu:after { clear:both; content:""; display:block; }
+.new_swiper1 .menu > li { float:left; padding:10px 0; border-bottom:1px solid #DEDEDE;border-top:1px solid #DEDEDE; background:#fff; font-weight:normal; display:inline-block; *display:inline; *zoom:1; cursor:pointer;
+-webkit-box-sizing:border-box; -khtml-box-sizing:border-box; -moz-box-sizing:border-box; -ms-box-sizing:border-box; -o-box-sizing:border-box; box-sizing:border-box; }
+.new_swiper1 .menu > li a { display:block; }
+.new_swiper1 .menu > li.selected { border-bottom:2px solid #CB0000; font-weight:bold; border-top:1px solid #DEDEDE;background:#FFF7F7}
+.new_swiper1 .menu > li.selected a {  }
+.new_swiper1.grid2 .menu > li { width:50%; }
+.new_swiper1.grid3 .menu > li { width:33.33%; }
+.new_swiper1.grid4 .menu > li { width:25%; }
+.new_swiper1.grid5 .menu > li { width:20%; }
+.new_swiper1.grid6 .menu > li { width:16.66%; }
+.new_swiper1.grid7 .menu > li { width:14%; }
+.new_swiper1.grid8 .menu > li { width:12%; }
+.new_swiper1.grid9 .menu > li { width:11%; }
+.new_swiper1.grid10 .menu > li { width:10%; }
+.new_swiper1.grid11 .menu > li { width:9%; }
+.new_swiper1.grid12 .menu > li { width:8%; }

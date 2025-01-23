@@ -1,0 +1,234 @@
+#banner {
+    width: 100%;
+}
+
+.left_scroll {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+}
+
+.left_scroll .bt1 {
+    position: absolute;
+    top: 10%;
+    left: 20px;
+    z-index: 1;
+}
+.left_scroll .bt2 {
+    position: absolute;
+    bottom: -2%;
+    right: 20px;
+    z-index: 1;
+}
+.left_scroll .bt3 {
+    position: absolute;
+    bottom: 3%;
+    left: 20px;
+    z-index: 1;
+}
+
+.left_scroll .bt1 > div {
+    color: white;
+    font-size: 7vw;
+    font-family: 'JeonjuCraftMjB';
+}
+.left_scroll .bt2 > div {
+    color: white;
+    font-size: 7vw;
+    font-family: 'JeonjuCraftMjB';
+}
+.left_scroll .bt3 > span {
+    display: block;
+    font-size: 11px;
+    color: white;
+}
+.left_scroll .bt3 > p {
+    font-size: 12px;
+    color: white;
+    margin-top: 20px;
+}
+
+.left_scroll .ta_banner {
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+.left_scroll .ta_banner video {
+    width: 100%;
+    object-fit: cover;
+    filter: blur(3px);
+}
+.port {
+}
+.pt_wrap {
+    width: auto;
+    height: 50%;
+    display: flex;
+    position: absolute;
+    top: 30vh;
+    left: 20px;
+}
+
+.pt_wrap div {
+    width: 650px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    margin-right: 100px;
+}
+.pt_wrap div .port_text {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 5px 20px;
+    opacity: 0;
+    transition: 0.5s;
+}
+.pt_wrap div .port_text.on {
+    opacity: 1;
+    z-index: 12;
+}
+
+.pt_wrap div .port_text h1 {
+    font-size: 15px;
+    color: white;
+}
+.pt_wrap div .port_text ul {
+    color: #fff;
+    margin-top: 5px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.pt_wrap div .port_text ul li {
+}
+.pt_wrap div .port_text ul li a {
+    font-size: 14px;
+    color: #fff;
+}
+
+.pt_wrap div:last-child {
+    margin-right: 0px;
+}
+.pt_wrap div > img {
+    transition: 0.3s;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    opacity: 1;
+}
+.pt_wrap div > img.op {
+    opacity: 0;
+}
+
+.pt_wrap div video {
+    transition: 0.5s;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.pt_wrap div:hover video,
+.pt_wrap div:hover img {
+    transform: scale(1);
+    filter: brightness(1);
+}
+
+.progress_line {
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    top: 85vh;
+}
+.divition {
+    width: 100%;
+    height: 10px;
+    background: #ddd;
+}
+.gauge {
+    width: 10%;
+    height: 10px;
+    background: red;
+}
+
+.pt_wrap div:nth-child(1) {
+}
+.pt_wrap div:nth-child(2) {
+}
+.pt_wrap div:nth-child(3) {
+    background-color: transparent;
+}
+.pt_wrap div:nth-child(4) {
+    background-color: transparent;
+}
+.pt_wrap div:nth-child(5) {
+    background-color: transparent;
+}
+.pt_wrap div:nth-child(6) {
+    background-color: transparent;
+}
+
+@media all and (max-width: 1500px) {
+    .left_scroll .bt1 > div {
+        font-size: 8vw;
+    }
+    .left_scroll .bt2 > div {
+        font-size: 8vw;
+    }
+}
+
+@media all and (max-width: 1025px) {
+}
+
+@media all and (max-width: 768px) {
+    .pt_wrap div {
+        margin-right: 80px;
+        border-radius: 15px;
+    }
+}
+
+@media all and (max-width: 450px) {
+    .pt_wrap {
+        top: 25vh;
+        height: 50%;
+    }
+    .left_scroll .bt1 > div {
+        white-space: nowrap;
+        font-size: 12vw;
+    }
+    .left_scroll .bt2 > div {
+        white-space: nowrap;
+        font-size: 12vw;
+    }
+    .left_scroll .bt2 {
+        position: absolute;
+        bottom: 10%;
+        left: 50px;
+        z-index: 1;
+        white-space: nowrap;
+    }
+    .left_scroll .bt3 {
+        display: none;
+    }
+
+    .pt_wrap div {
+        margin-right: 20px;
+        max-width: 300px;
+        width: 100%;
+        min-width: 300px;
+    }
+    .pt_wrap div .port_text {
+        padding: 15px 20px;
+    }
+    .pt_wrap div .port_text ul li:first-child {
+        display: none;
+    }
+}

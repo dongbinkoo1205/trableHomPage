@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+   <!-- 헤더 css -->
+   <link rel="stylesheet" href="/css/main/header.css" />
+   <link rel="stylesheet" href="/css/reset.css" />
+   <link rel="stylesheet" href="/css/font/allfont.css" />
+   <link rel="stylesheet" href="/css/main/contact_form.css">
+</div>
+</head>
+  <body>
+      <div id="header">
+        <div class="logo"><a href="/index.html">티에이 프로젝트</a></div>
+        <ul>
+            <li><a href="/html/sub/port.html">WEBSITE</a></li>
+        </ul>
+        <div class="design"><a href="/html/sub/design.html">DESIGN</a></div>
+        <div class="brochure"><a href="/html/sub/info.html">INFO</a></div>
+        <div class="contact">
+            <a href="/html/contact_form.html">CONTACT US</a>
+        </div>
+      </div>
+      <div class="ct_wrap">
+        <div class="ct_live">
+            <ul>
+                <li>
+                    <span class="cg_com">
+                        회사명 
+                    </span>
+                    <strong>의</strong>
+                </li>
+                <li>
+                    <span class="cg_name">
+                        담당자명 
+                    </span>
+                    <strong>님</strong>
+                </li>
+                <li class="serv_list">
+                    <span class="cg_serv">
+                        서비스
+                    </span>
+                    <strong class="serv_num">0</strong>
+                    <strong>의</strong>
+                </li>
+                <li class="proj_list">
+                    <span class="cg_pj">
+                        프로젝트 유형 
+                    </span>
+                    <strong class="proj_num">0</strong>
+                    <strong>을</strong>
+                </li>
+                <li>
+                    <span class="cg_during">
+                        프로젝트 기간
+                    </span>
+                    <strong>까지</strong>
+                </li>
+                <li>
+                    <span class="cg_go">진행 하시겠습니까?</span>
+                </li>
+            </ul>
+        </div>
+        <form id="ct_form" >
+          <div class="field">
+              <strong class="f_head">01 CLIENT
+                <svg xmlns="http://www.w3.org/2000/svg" width="12px" height="12px" viewBox="0 0 24 24" fill="none">
+                <path d="M12 3V5M12 19V21M3 12H5M19 12H21M5.6374 5.63604L7.05161 7.05025M16.9511 16.9497L18.3653 18.364M5.6374 18.364L7.05161 16.9497M16.9511 7.05025L18.3653 5.63604M12 8L13.236 10.633L16 11.0578L14 13.1062L14.472 16L12 14.633L9.528 16L10 13.1062L8 11.0578L10.764 10.633L12 8Z" stroke="blue" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </strong>
+              <span class="f_que">우리와 함께할 당신을 소개해주세요.</span>
+              <p class="f_lis">※기재하신 연락처로 담당자가 연락 or 이메일을 드립니다.</p>
+              <div class="form_sec">
+                <div class="form_left">
+                  <label for="f_com">회사명</label>
+                  <input autofocus type="text" name="f_com" id="f_com" >
+                  <label for="f_name">담당자명</label>
+                  <input type="text" name="f_name" id="f_name" >
+                </div>
+                <div class="form_right">
+                  <label for="p_phone">연락처</label>
+                  <input type="text" name="p_phone" id="p_phone">
+                  <label for="p_email">이메일</label>
+                  <input type="text" name="p_email" id="p_email">
+                </div>
+              </div>
+            </div>
+            <div class="field">
+              <strong class="f_head">02 PROJECT</strong>
+              <span class="f_que">우리와 함께하고 싶은 서비스를 선택해주세요.</span>
+              <p class="f_lis">※중복선택 가능</p>
+              <div class="form_sec2">
+                <span>
+                  <input onclick="getCheckedCnt()" type="checkbox" id="1_proj" name="f_proj" class="f_proj" value="웹사이트">
+                  <label for="1_proj">웹사이트<img src="/img/form_icon1.png" alt=""></label>
+                </span>
+                <span>
+                  <input onclick="getCheckedCnt()" type="checkbox" id="1_brand" class="f_proj"  name="f_proj" value="브랜딩">
+                  <label for="1_brand">브랜딩<img src="/img/form_icon2.png" alt=""></label>
+                </span>
+                <span>
+                  <input onclick="getCheckedCnt()" type="checkbox" id="1_pack" class="f_proj"  name="f_proj" value="패키지 디자인">
+                  <label for="1_pack">패키지 디자인<img src="/img/form_icon3.png" alt=""></label>
+                </span>
+                <span>
+                  <input onclick="getCheckedCnt()" type="checkbox" id="1_banner" class="f_proj"  name="f_proj" value="배너 디자인">
+                  <label for="1_banner">배너 디자인<img src="/img/form_icon4.png" alt=""></label>
+                </span>
+                <span>
+                  <input onclick="getCheckedCnt()" type="checkbox" id="1_pop" class="f_proj"  name="f_proj" value="팝업 디자인">
+                  <label for="1_pop">팝업 디자인<img src="/img/form_icon5.png" alt=""></label>
+                </span>
+                <span>
+                  <input onclick="getCheckedCnt()" type="checkbox" id="1_card" class="f_proj"  name="f_proj" value="카드 디자인">
+                  <label for="1_card">카드 디자인<img src="/img/form_icon6.png" alt=""></label>
+                </span>
+                <span>
+                  <input onclick="getCheckedCnt()" type="checkbox" id="1_market" class="f_proj"  name="f_proj" value="마케팅 디자인">
+                  <label for="1_market">마케팅 디자인<img src="/img/form_icon7.png" alt=""></label>
+                </span>
+                <span>
+                  <input onclick="getCheckedCnt()" type="checkbox" id="1_another" class="f_proj"  name="f_proj" value="기타">
+                  <label for="1_another">기타<img src="/img/form_icon8.png" alt=""></label>
+                </span>
+              </div>
+            </div>
+            <div class="field">
+              <strong class="f_head">03 PROJECT</strong>
+              <span class="f_que">우리와 함께할 프로젝트 유형에 관해 알려주세요.</span>
+              <p class="f_lis">※중복선택 가능</p>
+              <div class="form_sec3">
+                <span>
+                  <input onclick="getCheckedPrj()" type="checkbox" id="2_new" name="f_prow" class="f_prow" value="신규구축">
+                  <label for="2_new">신규 구축<img src="/img/form_icon9.png" alt=""></label>
+                </span>
+                <span>
+                  <input onclick="getCheckedPrj()" type="checkbox" id="2_renew" class="f_prow"  name="f_prow" value="리뉴얼">
+                  <label for="2_renew">리뉴얼<img src="/img/form_icon10.png" alt=""></label>
+                </span>
+                <span>
+                  <input onclick="getCheckedPrj()" type="checkbox" id="2_fixed" class="f_prow"  name="f_prow" value="유지보수">
+                  <label for="2_fixed">유지보수<img src="/img/form_icon11.png" alt=""></label>
+                </span>
+                <span>
+                  <input onclick="getCheckedPrj()" type="checkbox" id="2_another" class="f_prow"  name="f_prow" value="기타">
+                  <label for="2_another">기타<img src="/img/form_icon12.png" alt=""></label>
+                </span>
+              </div>
+            </div>
+            <div class="field">
+              <strong class="f_head">04 BUDGET</strong>
+              <span class="f_que">우리와 함께할 프로젝트 예산을 알려주세요.</span>
+              <p class="f_lis">※ 예산은 협의가 가능하며, 희망하는 예산을 선택해주세요.</p>
+              <div class="form_sec4">
+                <select name="p_bud" id="budget">
+                  <option class="p_bud" name="p_bud" >미정</option>
+                  <option class="p_bud" name="p_bud">100만원 이하</option>
+                  <option class="p_bud" name="p_bud">100만원 ~ 500만원</option>
+                  <option class="p_bud" name="p_bud">500만원 ~ 2000만원</option>
+                  <option class="p_bud" name="p_bud" >2000만원 ~ 5000만원</option>
+                  <option class="p_bud" name="p_bud" >5000만원 ~ 1억원</option>
+                  <option class="p_bud" name="p_bud" >1억원 이상</option>
+                </select>
+              </div>
+            </div>
+            <div class="field">
+              <strong class="f_head">05 DATE</strong>
+              <span class="f_que">우리와 함께할 프로젝트 기간을 알려주세요.</span>
+              <p class="f_lis">※ 희망하시는 마감일이기 때문에 실제 프로젝트 기간은 상의할 수 있습니다.</p>
+              <div class="form_sec5">
+                <span>프로젝트 시작일 <img src="/img/form_icon13.png" alt=""></span>
+                <label for="date"><input type="date"  name="p_mon2"  id="p_mon2" max="2050-12-31" min="2001-01-01"></label>
+              </div>
+              <div class="form_sec5">
+                <span>프로젝트 마감일 <img src="/img/form_icon14.png" alt=""></span>
+                <label for="date"><input type="date"  name="p_mon"  id="p_mon" max="2050-12-31" min="2001-01-01"></label>
+              </div>
+
+            </div>
+            <div class="field">
+              <strong class="f_head">06 Web URL</strong>
+              <span class="f_que">우리와 함께 할 프로젝트의 기존 사이트 주소를 입력해주세요</span>
+              <p class="f_lis">※ 사이트 주소가 없다면, 공란도 가능합니다.</p>
+              <div class="form_sec6">
+                <input type="text" name="f_page" id="f_page" placeholder="기존 홈페이지 주소를 입력해주세요.">
+              </div>
+            </div>
+            <div class="field">
+              <strong class="f_head">07 REFERENCE</strong>
+              <span class="f_que">우리와 함께 할 프로젝트에 대해 자세히 알려주세요.</span>
+              <p class="f_lis">※기재하신 연락처로 담당자가 연락 or 이메일을 드립니다.</p>
+              <div class="form_sec7">
+                <textarea  name="p_refer" id="p_refer" placeholder= "
+                예시)
+                프로젝트 제목 : 상상하는 모든 것을 현실로, 티에이 프로젝트
+
+                선호하는 레퍼런스 : www.taproject.com
+
+                프로젝트 목적 : 트랜드에 발맞추어 새롭고 창의적인 홈페이지를 구성.
+
+                문의 내용 : 프로젝트에 있는 스크롤효과를 넣고 싶은데 가능할까요?"></textarea>
+              </div>
+            </div>
+                <!-- 모바일 버젼에서 나오는 왼쪽 콘텐츠  -->
+          <div class="ct_live mobile_live">
+            <ul>
+                <li>
+                    <span class="cg_com">
+                        회사명 
+                    </span>
+                    <strong>의</strong>
+                </li>
+                <li>
+                    <span class="cg_name">
+                        담당자명 
+                    </span>
+                    <strong>님</strong>
+                </li>
+                <li class="serv_list">
+                    <span class="cg_serv">
+                        서비스
+                    </span>
+                    <strong class="serv_num">0</strong>
+                    <strong>의</strong>
+                </li>
+                <li class="proj_list">
+                    <span class="cg_pj">
+                        프로젝트 유형 
+                    </span>
+                    <strong class="proj_num">0</strong>
+                    <strong>을</strong>
+                </li>
+                <li>
+                    <span class="cg_during">
+                        프로젝트 기간
+                    </span>
+                    <strong>까지</strong>
+                </li>
+                <li>
+                    <span class="cg_go">진행 하시겠습니까?</span>
+                </li>
+            </ul>
+        </div>
+            <div class="field form_submit">
+              <div class="form_sec8">
+                  <input type="checkbox" name="p_agree" id="p_agree" value="동의합니다."> 
+                  <label for="p_agree" class="agree">개인정보 수집이용 동의(필수)</label>
+                <button type="button" class="agreebtn">전문보기</button>
+            </div>
+          </form>
+          <button type="submit" id="sendgogo" class="btn btn-border-1" value="프로젝트 의뢰하기">프로젝트 의뢰하기 <img src="/img/form_icon13.png" alt="" class="btn_ket"><img src="/img/form_icon10.png" alt="" class="btn_love"></button>
+
+      </div>
+    </div>
+    <!-- 개인정보 수집이용 동의 텍스트 -->
+    <div class="agree_report">
+      <div class="agree_wrap">
+        <div class="ag">
+            <div class="ag_inner">
+                <div class="box">
+                    <div class="agree_cont">
+                        <div class="close_btn">
+                            X
+                        </div>
+                        <div class="agree_div">
+                            <h3>개인정보 수집 및 이용</h3>
+                            <h5>㈜티에이프로젝트이하 “회사” 또는 ＂티에이프로젝트”라 함)는 정보통신망 이용촉진 및 정보보호등에 관한법률 (이하 “정보통신망법”) 등 정보통신서비스제공자가 준수하여야 할 관련 법령상의 개인정보보호 규정을 준수하며, 관련 법령에 의거한 개인정보취급방침을 정하여 이용자 권익 보호에 최선을 다하고 있습니다.</h5>
+                            <ul>
+                                <li>• 제 1 장. 개인정보의 수집 및 이용 목적</li>
+                                <li>• 제 2 장 수집하는 개인정보 항목 및 수집방법</li>
+                                <li>• 제 3 장 수집한 개인정보의 보유 및 이용기간</li>
+                                <li>• 제 4 장 개인정보의 파기절차 및 방법</li>
+                                <li>• 제 5 장 개인정보의 제공 및 공유</li>
+                                <li>• 제 6 장 개인정보보호를 위한 기술적/관리적 대책</li>
+                                <li>• 제 7 장 이용자 및 법정대리인의 권리와 그 행사방법</li>
+                                <li>• 제 8 장 개인정보관리책임자 및 상담, 신고</li>
+                                <li>• 제 9 장 고지</li>
+                            </ul>
+                            <div>
+                                <h4>제 1 장. 개인정보의 수집 및 이용 목적</h4>
+                                <p>㈜티에이프로젝트이하 “회사” 또는 ＂티에이프로젝트”라 함)는 정보통신망 이용촉진 및 정보보호등에 관한법률 (이하 “정보통신망법”) 등 개인정보는 생존하
+                                    는 개인에 관한 정보로서 실명, 주민등록번호 등의 사항으로 회사 회원 개인을 식별할 수 있는 정보 식별할 수 있는 정보 (당해 정보만으로는
+                                    특정 개인을 식별할 수 없더라도 다른 정보와 용이하게 결합하여 식별할 수 있는 것을 포함)를 말합니다.<br><br>
+                                    회사가 수집한 개인정보는 다음의 목적을 위해 활용합니다.<br><br>
+                                    1. 서비스 제공에 관한 계약 이행 및 서비스 제공에 따른 요금정산<br>
+                                    – 콘텐츠 제공, 물품배송 또는 청구서 등 발송, 본인 인증 및 구매, 요금 결제, 요금추심<br><br>
+                                    2. 회원 관리<br>
+                                    – 회원제 서비스 이용에 따른 본인 확인, 개인식별, 불량회원의 부정 이용 방지와 비인가 사용 방지, 가입 의사 확인, 가입 및 가입횟수 제한, 본 개정 이전에 가입한 14세 미만자의 법정 대리인 본인확인, 분쟁 조정을 위한 기록보존, 불만처리 등 민원처리, 고지사항 전달<br><br>
+                                    3. 마케팅 및 광고에 활용<br>
+                                    – 신규 서비스(제품) 개발 및 특화, 인구통계학적 특성에 따른 서비스 제공 및 광고게재, 접속 빈도 파악, 회원의 서비스 이용에 대한 통계, 이벤트 등 광고성 정보 전달 (회원의 개인정보를 광고를 의뢰한 개인이나 단체에 제공하지 않습니다.)<br>
+                                </p>
+
+                                <h4>제 2 장 수집하는 개인정보 항목 및 수집방법</h4>
+                                <p>[ 수집하는 개인정보 항목 ]</p>
+                                <ul>
+                                    <li>1. 최초 회원가입 시 회원식별 및 최적화 된 서비스 제공을 위해 아래와 같은 정보를 수집합니다.<br>
+                                        – 아이디, 비밀번호, 이름/기업명, 사업자등록번호, 담당자명(기업회원의 경우), 이메일주소, 휴대전화번호, 가입인증정보</li>
+                                    <li>2. 개인정보 수정 시 서비스 이용 편의를 위해 회원이 자발적으로 아래와 같은 정보를 제공할 수 있습니다.<br>
+                                        – 주소, 팩스번호, 전화번호</li>
+                                    <li>3. 서비스 이용 과정이나 이벤트 응모 과정, 기타 사업 처리과정에서 아래와 같은 정보가 생성되어 수집될 수 있습니다<br>
+                                        – 성명, 실명인증값, 아이핀번호(아이핀 인증시), 직업, 회사명, 주소, 전화번호, 팩스번호, 결제수단 정보, 서비스 이용 기록, 접속로그, 쿠키, 접속IP 정보, 결제기록, 불량 이용 기록, 이용자 상태정보, 방문일시</li>
+                                </ul>
+                                <p>[수집방법]<br>
+                                    회사는 다음과 같은 방법으로 개인정보를 수집합니다.</p>
+                                <ul>
+                                    <li>1. 홈페이지를 통한 회원가입, 상담 게시판</li>
+                                    <li>2. 서비스 이용에 따른 필수 정보 필요시 또는 이용자의 자발적 제공을 통한 수집</li>
+                                </ul>
+
+                                <h4>제 3 장 수집한 개인정보의 보유 및 이용기간</h4>
+                                <p>원칙적으로 개인정보 수집 및 이용 목적이 달성된 후에는 해당 정보를 지체없이 파기합니다. 단, 다음의 정보에 대해서는 아래의 이유로 명시한 기간동안 보존합니다.</p>
+                                <ul>
+                                    <li>1. 회원탈퇴 시 보존 개인정보<br>
+                                        – 보존항목: 회원이 제공한 회사명, 이름, 사업자등록번호, 이메일주소, 연락처 등<br>
+                                        – 보존근거: 불량 이용자의 재가입 방지, 명예훼손 등 권리침해 분쟁 및 수사협조<br>
+                                        – 보존기간: 회원탈퇴 후 1년<br><br></li>
+                                    <li>2. 상법, 전자상거래등에서의 소비자보호에 관한 법률 등 관계법령의 규정에 의하여 보존할 필요가 있는 경우<br>
+                                        회사는 관계법령에서 정한 일정한 기간 동안 회원정보를 보관합니다. 이 경우 회사는 보관하는 정보를 그 보관의 목적으로만 이용하며 보존기간은 아래와 같습니다.<br>
+                                        – 보존항목: 회원이 제공한 회사명, 이름, 사업자등록번호, 이메일주소, 연락처 등<br>
+                                        ㆍ보존이유 : 전자상거래 등에서의 소비자보호에 관한 법률<br>
+                                        ㆍ보존기간 : 5년<br>
+                                        – 대금결제 및 재화 등의 공급에 관한 기록<br>
+                                        ㆍ보존이유 : 전자상거래 등에서의 소비자보호에 관한 법률<br>
+                                        ㆍ보존기간 : 5년<br>
+                                        – 소비자의 불만 또는 분쟁처리에 관한 기록<br>
+                                        ㆍ보존이유 : 전자상거래 등에서의 소비자보호에 관한 법률<br>
+                                        ㆍ보존기간 : 3년<br>
+                                        – 방문에 관한 기록(서비스 이용기록, 접속로그, 접속 IP 정보)<br>
+                                        ㆍ보존이유 : 통신비밀보호법<br>
+                                        ㆍ보존기간 : 3개월<br>
+                                    </li>
+                                </ul>
+                                <h4>제 4 장 개인정보의 파기절차 및 방법</h4>
+                                <p>회사는 원칙적으로 개인정보 수집 및 이용목적이 달성되거나, 보유 및 이용기간이 경과된 후에는 해당 정보를 지체없이 파기합니다.<br>
+                                    파기절차 및 방법은 다음과 같습니다.
+                                </p>
+                                <ul>
+                                    <li> 1. 파기절차<br>
+                                        회원이 회원가입 등을 위해 입력한 정보는 목적이 달성된 후 내부 방침 및 기타 관련 법령에 의한 정보보호 사유에 따라(보유 및 이용기간 참조) 일정 기간 저장된 후 파기됩니다. 동 개인정보는 법률에 의한 경우가 아니고는 보유되는 목적 이외의 다른 목적으로 이용되지 않습니다.</li>
+                                    <li>2. 파기방법<br>
+                                        종이에 출력된 개인정보는 분쇄기로 분쇄하거나 소각을 통하여 파기하고 전자적 파일형태로 저장된 개인정보는 기록을 재생할 수 없는 기술적 방법을 사용하여 삭제합니다.</li>
+                                </ul>
+
+                                <h4>제 5 장 개인정보의 제공 및 공유</h4>
+                                <p>원칙적으로 회사는 회원의 개인정보를 수집 및 이용목적에 한해서만 이용하며 타인 또는 타기업/기관에 공개하지 않습니다. 다만, 아래의 경우에는 예외로 합니다.</p>
+                                <ul>
+                                    <li>1. 이용자가 사전에 동의한 경우<br>
+                                        – 정보수집 또는 정보제공 이전에 회원에게 비즈니스 파트너가 누구인지, 어떤 정보가 왜 필요한지, 언제까지 어떻게 보호/관리되는지 알리고 동의를 구하는 절차를 거치며, 회원이 동의하지 않는 경우에는 추가 정보를 수집하거나 비즈니스 파트너와 공유하지 않습니다.</li>
+                                    <li>2. 법령의 규정에 의거하거나, 수사 목적으로 법령에 정해진 절차와 방법에 따라 수사기관의 요구가 있는 경우</li>
+                                    <li>3. 이용목적에 부합하는 개인정보의 이용 및 제공<br>
+                                        – 도메인, 키워드, WINC, SSL의 등록을 위하여 해당 서비스 등록사업자에게 신청자의 정보를 제공하는 경우<br>
+                                        – 분쟁에 연루된 도메인 등록자의 연락처를 분쟁 조정 기구나 법원이 요청하는 경우<br>
+                                        – 정부기관이 해당 법률에서 정하는 소관업무를 수행하기 위하여 도메인 이름 및 네임서버 정보 등을 요청하는 경우<br>
+                                        – 업무상 연락을 위하여 회원의 정보(성명, 주소, 전화번호)를 사용하는 경우<br>
+                                        – 통계작성, 홍보자료, 학술연구 또는 시장조사를 위하여 필요한 경우로서 특정 고객임을 식별할 수 없는 형태로 제공하는 경우</li>
+                                </ul>
+
+                                <h4>제 6 장 개인정보보호를 위한 기술적/관리적 대책</h4>
+                                <ul>
+                                    <li>[기술적인 대책]<br>
+                                        1. 회원의 개인정보는 비밀번호에 의해 보호되며, 개인정보 데이터는 별도의 보안기능을 통해 보호됩니다.<br>
+                                        2. 회사는 개인정보를 개인정보보호시스템에 암호화하여 저장하며, 회사의 정보통신망 외부로 개인정보를 송신하거나 PC에 저장할 경우 암호화하여 저장하도록 시스템을 운영합니다.
+                                    </li>
+                                    <li>[관리적인 대책]<br>
+                                        1. 위와 같은 노력 이외에 회원 스스로 제3자에게 비밀번호 등이 노출되지 않도록 주의하여야 합니다. 특히 비밀번호 등이 공공장소에 설치한 PC를 통해 유출되지 않도록 항상 유의하여야 합니다. 회원의 ID와 비밀번호는 반드시 본인만 사용하고 비밀번호를 자주 바꾸는 것이 좋습니다.<br>
+                                        2.회사는 회사 규정에 별도의 전산관리규정을 마련하여 다음과 같은 사항을 준수합니다.<br>
+                                        – 개인정보관리책임자의 지정 등 개인정보보호 조직의 구성, 운영에 관한 사항<br>
+                                        – 개인정보취급자의 교육에 관한 사항<br>
+                                        – 개인정보처리시스템의 접속 기록 유지 및 정기적인 확인 감독<br>
+                                        – 개인정보 출력 및 복사시의 보호조치<br>
+                                        – 기타 개인정보 보호를 위해 필요한 사항</li>
+                                </ul>
+
+                                <h4>제 7 장 이용자 및 법정대리인의 권리와 그 행사방법</h4>
+                                <ul>
+                                    <li>1. 이용자는 언제든지 등록되어 있는 자신의 개인정보를 조회하거나 수정할 수 있으며 가입해지를 요청할 수도 있습니다.</li>
+                                    <li>2. 개인정보의 조회, 수정, 탈퇴, 처리정지 요구에 대해서는 10일 이내에 조치하여 처리 결과를 통지 합니다.</li>
+                                    <li>3. 개인정보의 조회, 수정, 탈퇴, 처리정지 요구 접수•처리 부서와 담당자는 아래와 같습니다.<br>
+                                        부서 : (주) 티에이 프로젝트 개발팀<br>
+                                        – 담당자 : 개발팀 TEL. 070-4770-7935<br>
+                                        – 주소 : 서울특별시 강남구 테헤란로 151, 410호                                </li>
+                                    <li> 4. 회사는 이용자의 요청에 의해 해지 또는 삭제된 개인정보는 “회사가 수집하는 개인정보의 보유 및 이용기간”에 명시된 바에 따라 처리하고 그 외의 용도로 열람 또는 이용할 수 없도록 처리합니다.</li>
+                                    <li>[14세 미만 아동의 회원 가입에 대해]<br>
+                                        – 티에이스튜디오는 만 14세 미만 아동의 회원가입은 받고 있지 않습니다.</li>
+                                    <li> [미성년자 거래시 철회에 대해]<br>
+                                        – 회사는 미성년자와의 거래시 사전에 법정대리인(부모)의 동의를 구할 의무가 있으며, 법정대리인(부모)의 동의를 얻지 못한 거래는 취소할 수 있습니다. 또한 미성년자의 법정대리인(부모)이 거래 성립 후 7일 이내에 철회를 요청할 경우, 거래를 철회(환불)하겠습니다.</li>
+                                </ul>
+
+                                <h4>제 8 장 개인정보관리책임자 및 상담, 신고</h4>
+                                <p>회원의 개인정보를 보호하고 개인정보와 관련한 불만을 처리하기 위하여 회사는 개인정보관리책임자를 두고 있습니다. 회원의 개인정보와 관련한 문의사항은 아래의 개인정보관리책임자 또는 개인정보관리담당자에게 연락하시기 바랍니다.</p>
+                                <ul>
+                                    <li>• 구분 : 개인정보관리 책임자</li>
+                                    <li>• 부서 : 티에이 프로젝트 개발팀</li>
+                                    <li>• 팀명 : 개발1팀</li>
+                                    <li>• 전화 : 070-4770-7935</li>
+                                    <li>• 이메일 : id@trable.co.kr</li>
+                                </ul>
+                                <ul>
+                                    <li>• 구분 : 개인정보관리 담당자</li>
+                                    <li>• 부서 : 티에이 프로젝트 개발팀</li>
+                                    <li>• 팀명 : 개발1팀</li>
+                                    <li>• 전화 : 070-4770-7935</li>
+                                    <li>• 이메일 : id@trable.co.kr</li>
+                                </ul>
+                                <ul>
+                                    <li>• 회원은 회사의 서비스를 이용하며 발생하는 모든 개인정보보호 관련 민원을 개인정보관리책임자 혹은 담당부서로 신고할 수 있습니다.</li>
+                                    <li>• 회사는 이용자의 신고사항에 대한 답변을 신속히 할 것입니다.</li>
+                                    <li>• 기타 개인정보침해 신고나 상담이 필요한 경우에는 아래 기관에 문의하시기 바랍니다.</li>
+                                    <li>• 개인분쟁조정위원회 (www.1336.or.kr / 1336)</li>
+                                    <li>• 정보보호마크인증위원회 (www.eprivacy.or.kr / 02-580-0533~4)</li>
+                                    <li>• 대검찰청 인터넷범죄수사센터 (http://icic.sppo.go.kr / 02-3480-3600)</li>
+                                    <li>• 경찰청 사이버테러대응센터 (www.ctrc.go.kr / 02-392-0330)</li>
+                                </ul>
+
+                                <h4>제 9 장 고지</h4>
+                                <p>법령.정책 또는 보안기술의 변경에 따라 내용의 추가.삭제 및 수정이 있을 시에는 변경사항 시행일의 7일전부터 회사 홈페이지의 공지사항을 통하여 고지합니다.</p>
+                                <ul>
+                                    <li>부칙</li>
+                                    <li>1. (시행일) 본 개인정보취급방침은 2024년 6월 27일부터 시행합니다.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script src="/js/main/contact_form.js"></script>
+  </body>
+</html>
+
