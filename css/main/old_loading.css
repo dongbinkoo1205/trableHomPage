@@ -325,18 +325,12 @@
     cursor: pointer;
 }
 #intro_next > .talk_box .talk_wrap .talk_bg1 .talk_oj .ojt_img {
-    background: url('/img/talk_img2.png');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: darkgreen;
     height: 60%;
     position: relative;
 }
 #intro_next > .talk_box .talk_wrap .talk_bg2 .talk_oj .ojt_img {
-    background: url('/img/talk_img4.png');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: darkred;
     height: 60%;
     position: relative;
 }
