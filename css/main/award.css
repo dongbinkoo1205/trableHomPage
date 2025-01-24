@@ -590,7 +590,7 @@
     }
 }
 
-@media all and (max-width: 400px) {
+@media all and (max-width: 600px) {
     /* 목업 콘텐츠 */
     #award_new .award_mok .mok_cont {
         width: 98%;
@@ -618,11 +618,14 @@
     }
     #award_new .award_fold .foldCont > ul:nth-of-type(2n-1) {
         width: 100%;
-        padding-left: 20%;
+        padding-left: 0%;
     }
     #award_new .award_fold .foldCont > ul:nth-of-type(2n) {
         width: 100%;
-        padding-right: 20%;
+        padding-right: 0%;
+    }
+    #award_new .award_fold .foldCont .foldItem li img {
+        border-radius: 0;
     }
 }
 

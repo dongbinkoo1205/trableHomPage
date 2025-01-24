@@ -503,10 +503,10 @@
 }
 #intro_next > .talk_box .talk_wrap .talk_oj .oj_cont .oj_3d .d3_img::before {
     content: '';
-    bottom: 19px;
-    right: 15px;
-    width: 14px;
-    height: 14px;
+    bottom: 4px;
+    right: 20px;
+    width: 11px;
+    height: 11px;
     background-color: #35ff00b0;
     border-radius: 50%;
     position: absolute;
